@@ -3,72 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PC-Repair</title>
+    <link href="/dist/app.css" rel="stylesheet">
 </head>
 <body>
     <!-- Barra de navegación -->
     <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#contact">Contact</a></li>
+        <nav class="bg-white p-4 flex items-center justify-between border-b border-gray-300">
+            <img src="/src/assets/logo.png" alt="PC-Repair" class="h-8 w-auto">
+            <ul class="flex space-x-4">
+                <li><a href="#home" class="font-bold hover:text-gray-700 active:text-blue-900 hover:scale-105 active:scale-95">Home</a></li>
+                <li><a href="#services" class="font-bold hover:text-gray-700 active:text-blue-900 hover:scale-105 active:scale-95">Services</a></li>
+                <li><a href="#testimonials" class="font-bold hover:text-gray-700 active:text-blue-900 hover:scale-105 active:scale-95">Testimonials</a></li>
+                <li><a href="#contact" class="font-bold hover:text-gray-700 active:text-blue-900 hover:scale-105 active:scale-95">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+
+    <main class="w-full">
         <!-- Hero (Sección principal Carrusel o imagen destacada) -->
-        <section id="home">
-            <h1>Welcome to Our Landing Page</h1>
-            <p>Your success starts here. Discover our services and see how we can help you achieve your goals.</p>
-            <button>Get Started</button>
+        <section id="home" class="text-center py-20 bg-center bg-cover" style="background-image: url('/src/assets/home.jpeg');">
+            <div class="bg-black/70 p-5 rounded m-5 space-y-2">
+                <h1 class="text-white font-bold text-3xl">Welcome to Our Landing Page</h1>
+                <p class="text-white">Your success starts here. Discover our services and see how we can help you achieve your goals.</p>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Get Started</button>
+            </div>
         </section>
         <!-- Sección de servicios o características -->
-        <section id="services">
-            <h2>Our Services</h2>
-            <div class="service">
-                <h3>Service One</h3>
-                <p>Description of service one.</p>
-            </div>
-            <div class="service">
-                <h3>Service Two</h3>
-                <p>Description of service two.</p>
-            </div>
-            <div class="service">
-                <h3>Service Three</h3>
-                <p>Description of service three.</p>
+        <section id="services" class="py-20 bg-gradient-to-b from-blue-600 to-white">
+            <h2 class="text-2xl font-bold mb-4 text-center text-white">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 m-5">
+                <div class="bg-white p-6 rounded shadow">
+                    <h3 class="text-xl font-semibold text-center">Mantenimiento Básico</h3>
+                    <p class="text-center">Description of service one.</p>
+                </div>
+                <div class="bg-white p-6 rounded shadow">
+                    <h3 class="text-xl font-semibold text-center">Mantenimiento Avanzado</h3>
+                    <p class="text-center">Description of service two.</p>
+                </div>
+                <div class="bg-white p-6 rounded shadow">
+                    <h3 class="text-xl font-semibold text-center">Reparación Especializada</h3>
+                    <p class="text-center">Description of service three.</p>
+                </div>
             </div>
         </section>
         <!-- Sección de testimonios o casos de éxito -->
-        <section id="testimonials">
-            <h2>Our Testimonials</h2>
-            <div class="testimonial">
-                <div>
-                    <img src="" alt="Client One">
-                    <h3>Client One</h3>
+        <section id="testimonials"  class=" py-20">
+            <h2 class="text-2xl font-bold mb-4 text-center">Our Testimonials</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="testimonial">
+                    <div>
+                        <img src="/src/assets/client1.png" alt="Client One">
+                        <h3 class="text-xl font-semibold">Client One</h3>
+                    </div>
+                    <p>Testimonial from client one.</p>
                 </div>
-                <p>Testimonial from client one.</p>
-            </div>
-            <div class="testimonial">
-                <div>
-                    <img src="" alt="Client Two">
-                    <h3>Client Two</h3>
+                <div class="testimonial">
+                    <div>
+                        <img src="" alt="Client Two">
+                        <h3 class="text-xl font-semibold">Client Two</h3>
+                    </div>
+                    <p>Testimonial from client two.</p>
                 </div>
-                <p>Testimonial from client two.</p>
-            </div>
-            <div class="testimonial">
-                <div>
-                    <img src="" alt="Client Three">
-                    <h3>Client Three</h3>
+                <div class="testimonial">
+                    <div>
+                        <img src="" alt="Client Three">
+                        <h3 class="text-xl font-semibold">Client Three</h3>
+                    </div>
+                    <p>Testimonial from client three.</p>
                 </div>
-                <p>Testimonial from client three.</p>
             </div>
         </section>
         <!-- Sección de contacto o llamada a la acción -->
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <form>
+        <section id="contact"  class="py-20 bg-gradient-to-b from-white to-blue-600">
+            <h2 class="text-2xl font-bold mb-4 text-center">Contact Us</h2>
+            <form class="max-w-md mx-auto flex flex-col space-y-4">
                 <input type="text" placeholder="Your Name" required>
                 <input type="email" placeholder="Your Email" required>
                 <textarea placeholder="Your Message" required></textarea>
@@ -77,8 +86,8 @@
         </section>
     </main>
     <!-- Pie de página -->
-    <footer>
-        <p>&copy; 2024 Your Company. All rights reserved.</p>
+    <footer class="bg-white p-4 text-center">
+        <p class="text-black font-bold">&copy; 2024 Your Company. All rights reserved.</p>
     </footer>
 </body>
 </html>
