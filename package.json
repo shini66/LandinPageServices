@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tailwindcss -i ./src/css/app.css -o ./dist/app.css --config ./tailwind.config.js --watch",
+    "build": "tailwindcss -i ./src/css/app.css -o ./dist/app.css --config ./tailwind.config.js --minify"
   },
   "repository": {
     "type": "git",
@@ -17,5 +19,10 @@
   "bugs": {
     "url": "https://github.com/shini66/LandinPageServices/issues"
   },
-  "homepage": "https://github.com/shini66/LandinPageServices#readme"
+  "homepage": "https://github.com/shini66/LandinPageServices#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.2.1",
+    "autoprefixer": "^10.4.27",
+    "tailwindcss": "^4.2.1"
+  }
 }
