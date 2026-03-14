@@ -12,59 +12,80 @@
         <nav class="bg-white p-4 flex items-center justify-between border-b border-gray-300">
             <img src="/src/assets/logo.png" alt="PC-Repair" class="h-8 w-auto">
             <ul class="flex space-x-4">
-                <li><a href="#home" class="font-bold hover:text-gray-700 active:text-blue-900 hover:scale-105 active:scale-95">Home</a></li>
-                <li><a href="#services" class="font-bold hover:text-gray-700 active:text-blue-900 hover:scale-105 active:scale-95">Services</a></li>
-                <li><a href="#testimonials" class="font-bold hover:text-gray-700 active:text-blue-900 hover:scale-105 active:scale-95">Testimonials</a></li>
-                <li><a href="#contact" class="font-bold hover:text-gray-700 active:text-blue-900 hover:scale-105 active:scale-95">Contact</a></li>
+                <li><a href="#home" class="font-bold hover:text-gray-700 active:text-blue-900 hover:scale-105 active:scale-95">Inicio</a></li>
+                <li><a href="#services" class="font-bold hover:text-gray-700 active:text-blue-900 hover:scale-105 active:scale-95">Servicios</a></li>
+                <li><a href="#testimonials" class="font-bold hover:text-gray-700 active:text-blue-900 hover:scale-105 active:scale-95">Testimonios</a></li>
+                <li><a href="#contact" class="font-bold hover:text-gray-700 active:text-blue-900 hover:scale-105 active:scale-95">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="w-full">
         <!-- Hero (Sección principal Carrusel o imagen destacada) -->
-        <section id="home" class="text-center py-20 bg-center bg-cover" style="background-image: url('/src/assets/home.jpeg');">
+        <section id="home" class="text-center py-10 bg-center bg-cover" style="background-image: url('/src/assets/home.jpeg');">
             <div class="bg-black/70 p-5 rounded m-5 space-y-2">
-                <h1 class="text-white font-bold text-3xl">Welcome to Our Landing Page</h1>
-                <p class="text-white">Your success starts here. Discover our services and see how we can help you achieve your goals.</p>
-                <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Get Started</button>
+                <h1 class="text-white font-bold text-3xl">Bienvenido a Nuestra Página de Inicio</h1>
+                <p class="text-white">Tu éxito comienza aquí. Descubre nuestros servicios y ve cómo podemos ayudarte a alcanzar tus objetivos.</p>
+                <button id="homeContact" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Comenzar</button>
             </div>
         </section>
         <!-- Sección de servicios o características -->
-        <section id="services" class="py-20 bg-gradient-to-b from-blue-600 to-white">
-            <h2 class="text-2xl font-bold mb-4 text-center text-white">Our Services</h2>
+        <section id="services" class="py-10 bg-gradient-to-b from-blue-600 to-white">
+            <h2 class="text-2xl font-bold mb-4 text-center text-white">Nuestros Servicios</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 m-5">
-                <div class="bg-white p-6 rounded shadow">
+                <div class="bg-white p-6 rounded shadow flex flex-col justify-between">
                     <h3 class="text-xl font-semibold text-center">Mantenimiento Básico</h3>
-                    <p class="text-center">Limpieza física y de polvo, diagnóstico general, actualizaciones de sistema y drivers, instalación/escaneo antivirus, eliminación de archivos temporales y optimización básica de arranque.</p>
+                    <p class="text-justify my-5">Limpieza física y de polvo, diagnóstico general, actualizaciones de sistema y drivers, instalación/escaneo antivirus, eliminación de archivos temporales y optimización básica de arranque.</p>
+                    <button class="service-btn bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600" data-service="Mantenimiento Básico">Contacto</button>
                 </div>
-                <div class="bg-white p-6 rounded shadow">
+                <div class="bg-white p-6 rounded shadow flex flex-col justify-between">
                     <h3 class="text-xl font-semibold text-center">Mantenimiento Avanzado</h3>
-                        <p class="text-center">Incluye todo lo del básico más limpieza y ajustes profundos, optimización de rendimiento, pruebas de disco y memoria, copias de seguridad y asesoría para mejoras de hardware (p. ej. añadir RAM o migrar a SSD).</p>
+                    <p class="text-justify my-5">Incluye todo lo del básico más limpieza y ajustes profundos, optimización de rendimiento, pruebas de disco y memoria, copias de seguridad y asesoría para mejoras de hardware (p. ej. añadir RAM o migrar a SSD).</p>
+                    <button class="service-btn bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600" data-service="Mantenimiento Avanzado">Contacto</button>
                 </div>
-                <div class="bg-white p-6 rounded shadow">
+                <div class="bg-white p-6 rounded shadow flex flex-col justify-between">
                     <h3 class="text-xl font-semibold text-center">Reparación Especializada</h3>
-                        <p class="text-center">Diagnóstico y reparación de fallos de hardware, reemplazo de componentes, recuperación avanzada de datos, eliminación de malware persistente y reinstalación o migración completa del sistema con configuración personalizada.</p>
-
+                    <p class="text-justify my-5">Diagnóstico y reparación de fallos de hardware, reemplazo de componentes, recuperación avanzada de datos, eliminación de malware persistente y reinstalación o migración completa del sistema con configuración personalizada.</p>
+                    <button class="service-btn bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600" data-service="Reparación Especializada">Contacto</button>
                 </div>
             </div>
         </section>
         <!-- Sección de testimonios o casos de éxito -->
-        <section id="testimonials"  class=" py-20">
-            <h2 class="text-2xl font-bold mb-4 text-center">Our Testimonials</h2>
+        <section id="testimonials"  class=" py-10">
+            <h2 class="text-2xl font-bold mb-4 text-center">Testimonios</h2>
             <div class="relative max-w-5xl mx-auto">
                 <button id="prevTestimonial" class="absolute left-0 top-1/2 -translate-y-1/2 bg-gray-600 text-white px-3 py-2 rounded">◀</button>
-                <div id="testimonialContainer" class="grid grid-cols-1 md:grid-cols-3 gap-4"></div>
+                <div id="testimonialContainer" class="grid grid-cols-1 md:grid-cols-3 gap-4 mx-20"></div>
                 <button id="nextTestimonial" class="absolute right-0 top-1/2 -translate-y-1/2 bg-gray-600 text-white px-3 py-2 rounded">▶</button>
             </div>
         </section>
         <!-- Sección de contacto o llamada a la acción -->
-        <section id="contact"  class="py-20 bg-gradient-to-b from-white to-blue-600">
-            <h2 class="text-2xl font-bold mb-4 text-center">Contact Us</h2>
-            <form class="max-w-md mx-auto flex flex-col space-y-4">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
+        <section id="contact"  class="py-10 bg-gradient-to-b from-white to-blue-600">
+            <h2 class="text-2xl font-bold mb-4 text-center">Contacto</h2>
+            <form class="max-w-md mx-auto flex flex-col space-y-4 bg-white p-8 rounded shadow">
+                <input 
+                    type="text" 
+                    placeholder="Tu Nombre" 
+                    required
+                    class="border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                >
+                <input 
+                    type="email" 
+                    placeholder="Tu Correo Electrónico" 
+                    required
+                    class="border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                >
+                <textarea 
+                    placeholder="Tu Mensaje" 
+                    required
+                    class="border border-gray-300 rounded px-4 py-2 h-32 resize-none focus:outline-none focus:ring-2 focus:ring-blue-500"
+                ></textarea>
+                <button 
+                    type="submit"
+                    class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 transition-colors"
+                >
+                    Enviar Mensaje
+                </button>
             </form>
         </section>
     </main>
@@ -73,6 +94,7 @@
         <p class="text-black font-bold">&copy; 2024 Your Company. All rights reserved.</p>
     </footer>
 
+    <script src="/src/js/app.js"></script>
     <script src="/src/js/testimonials.js"></script>
     <script>
         fetchTestimonials();
@@ -80,6 +102,25 @@
         setInterval(() => {
             nextBtn.click();
         }, 5000);
+
+        document.getElementById("homeContact").addEventListener("click", () => {
+            sendWhatsapp("Hola, estoy interesado en sus servicios. ¿Podrían brindarme más información?");
+        });
+
+        Array.from(document.getElementsByClassName('service-btn')).forEach(button => {
+            button.addEventListener('click', () => {
+                const serviceName = button.getAttribute('data-service');
+                sendWhatsapp(`Hola, estoy interesado en el servicio de ${serviceName}. ¿Podrían brindarme más información?`);
+            });
+        });
+
+        document.getElementById("contact").querySelector("form").addEventListener("submit", (e) => {
+            e.preventDefault();
+            const name = e.target[0].value;
+            const email = e.target[1].value;
+            const message = e.target[2].value;
+            sendWhatsapp(`Hola, mi nombre es ${name} (${email}). ${message}`);
+        });
     </script>
 </body>
 </html>

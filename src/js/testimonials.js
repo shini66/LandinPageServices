@@ -25,9 +25,9 @@ function renderTestimonials() {
             
 
         const card = `
-            <div class="bg-white p-6 rounded shadow-lg">
+            <div class="bg-white p-6 rounded shadow-lg text-center flex flex-col items-center">
                 ${avatar}
-                <p class="font-bold">"${testimonial.name}"</p>
+                <p class="font-bold mt-2">"${testimonial.name}"</p>
                 <p class="text-center italic mt-4">- ${testimonial.message}</p>
             </div>
         `;
