@@ -1,0 +1,31 @@
+[
+    {
+        "name": "Juan Pérez",
+        "photo": "",
+        "message": "Excelente servicio. Repararon mi laptop el mismo día."
+    },
+    {
+        "name": "Ana Gómez",
+        "photo": "/src/assets/user.png",
+        "message": "Muy profesionales y rápidos. 100% recomendados."
+    },
+    {
+        "name": "Carlos Ruiz",
+        "photo": "",
+        "message": "Recuperaron todos mis archivos. Pensé que los había perdido."
+    },
+    {
+        "name": "Laura Díaz",
+        "message": "Mi computadora quedó como nueva."
+    },
+    {
+        "name": "Pedro Fernández",
+        "photo": "/src/assets/user.png",
+        "message": "Muy buena atención y precios justos."
+    },
+    {
+        "name": "Pedro Fernández",
+        "photo": "/src/assets/user.png",
+        "message": "Muy buena atención y precios justos."
+    }
+]

@@ -35,43 +35,26 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 m-5">
                 <div class="bg-white p-6 rounded shadow">
                     <h3 class="text-xl font-semibold text-center">Mantenimiento Básico</h3>
-                    <p class="text-center">Description of service one.</p>
+                    <p class="text-center">Limpieza física y de polvo, diagnóstico general, actualizaciones de sistema y drivers, instalación/escaneo antivirus, eliminación de archivos temporales y optimización básica de arranque.</p>
                 </div>
                 <div class="bg-white p-6 rounded shadow">
                     <h3 class="text-xl font-semibold text-center">Mantenimiento Avanzado</h3>
-                    <p class="text-center">Description of service two.</p>
+                        <p class="text-center">Incluye todo lo del básico más limpieza y ajustes profundos, optimización de rendimiento, pruebas de disco y memoria, copias de seguridad y asesoría para mejoras de hardware (p. ej. añadir RAM o migrar a SSD).</p>
                 </div>
                 <div class="bg-white p-6 rounded shadow">
                     <h3 class="text-xl font-semibold text-center">Reparación Especializada</h3>
-                    <p class="text-center">Description of service three.</p>
+                        <p class="text-center">Diagnóstico y reparación de fallos de hardware, reemplazo de componentes, recuperación avanzada de datos, eliminación de malware persistente y reinstalación o migración completa del sistema con configuración personalizada.</p>
+
                 </div>
             </div>
         </section>
         <!-- Sección de testimonios o casos de éxito -->
         <section id="testimonials"  class=" py-20">
             <h2 class="text-2xl font-bold mb-4 text-center">Our Testimonials</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <div class="testimonial">
-                    <div>
-                        <img src="/src/assets/client1.png" alt="Client One">
-                        <h3 class="text-xl font-semibold">Client One</h3>
-                    </div>
-                    <p>Testimonial from client one.</p>
-                </div>
-                <div class="testimonial">
-                    <div>
-                        <img src="" alt="Client Two">
-                        <h3 class="text-xl font-semibold">Client Two</h3>
-                    </div>
-                    <p>Testimonial from client two.</p>
-                </div>
-                <div class="testimonial">
-                    <div>
-                        <img src="" alt="Client Three">
-                        <h3 class="text-xl font-semibold">Client Three</h3>
-                    </div>
-                    <p>Testimonial from client three.</p>
-                </div>
+            <div class="relative max-w-5xl mx-auto">
+                <button id="prevTestimonial" class="absolute left-0 top-1/2 -translate-y-1/2 bg-gray-600 text-white px-3 py-2 rounded">◀</button>
+                <div id="testimonialContainer" class="grid grid-cols-1 md:grid-cols-3 gap-4"></div>
+                <button id="nextTestimonial" class="absolute right-0 top-1/2 -translate-y-1/2 bg-gray-600 text-white px-3 py-2 rounded">▶</button>
             </div>
         </section>
         <!-- Sección de contacto o llamada a la acción -->
@@ -89,5 +72,14 @@
     <footer class="bg-white p-4 text-center">
         <p class="text-black font-bold">&copy; 2024 Your Company. All rights reserved.</p>
     </footer>
+
+    <script src="/src/js/testimonials.js"></script>
+    <script>
+        fetchTestimonials();
+
+        setInterval(() => {
+            nextBtn.click();
+        }, 5000);
+    </script>
 </body>
 </html>
